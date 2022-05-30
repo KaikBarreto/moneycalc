@@ -1,0 +1,33 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #555;
+    color: #fff;
+
+    height: 90px;
+
+    .logo {
+        padding: 50px;
+    }
+
+    .links {
+        display: flex;
+        gap: 50px;
+
+        margin-right: 50px;
+
+        list-style: none;
+
+        li {
+            :nth-child(1) { // the Link element
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
