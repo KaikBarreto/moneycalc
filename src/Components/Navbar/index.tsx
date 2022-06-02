@@ -10,17 +10,17 @@ function Navbar() {
 
             <ul className="links">
                 <li>
-                    <Link to="#" >
+                    <Link to="/" >
                         Página Inicial
                     </Link>
                 </li>
                 <li>
-                    <Link to="#" >
+                    <Link to="/calculator" >
                         Calculadora
                     </Link>
                 </li>
                 <li>
-                    <Link to="#" >
+                    <Link to="/contact" >
                         Contato
                     </Link>
                 </li>

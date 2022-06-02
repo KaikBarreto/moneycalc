@@ -1,0 +1,33 @@
+footer {
+    display: block;
+    text-align: center;
+    line-height: 90px;
+    
+    background: #1F1300;
+    color: #DADFF7;
+    
+    margin-top: 90px;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+
+    p {
+        margin: 0;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            color: #CC5803;
+            transition: .5s;
+            border-radius: 30px;
+            padding-block: 20px;
+            padding-inline: 10px;
+
+            &:hover {
+                background: lighten(#1F1300, 5);
+            }
+        }
+    }
+}
