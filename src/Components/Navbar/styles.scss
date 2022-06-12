@@ -1,3 +1,6 @@
+$bg-blue: #00021f;
+$light-blue: #00c3ff;
+
 .navbar {
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background: #1F1300;
+    background: $bg-blue;
     color: #DADFF7;
 
     height: 90px;
@@ -26,7 +29,7 @@
         li {
             :nth-child(1) { // the Link element
                 text-decoration: none;
-                color: #CC5803;
+                color: $light-blue;
                 font-size: 1.5rem;
                 padding-inline: 10px;
                 padding-block: 20px;
@@ -34,7 +37,7 @@
                 transition: 0.5s;
 
                 &:hover {
-                    background: lighten(#1F1300, 5);
+                    background: lighten($bg-blue, 10);
                 }
             }
         }

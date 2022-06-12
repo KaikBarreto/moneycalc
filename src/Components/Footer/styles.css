@@ -2,8 +2,8 @@ footer {
   display: block;
   text-align: center;
   line-height: 90px;
-  background: #1F1300;
-  color: #DADFF7;
+  background: #00021f;
+  color: #fff;
   margin-top: 90px;
   position: relative;
   bottom: 0;
@@ -12,13 +12,14 @@ footer {
 }
 
 footer p {
+  font-size: 32px;
   margin: 0;
   padding: 0;
 }
 
 footer p a {
   text-decoration: none;
-  color: #CC5803;
+  color: #00c3ff;
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 30px;
@@ -27,6 +28,6 @@ footer p a {
 }
 
 footer p a:hover {
-  background: #392300;
+  background: #000439;
 }
 /*# sourceMappingURL=styles.css.map */

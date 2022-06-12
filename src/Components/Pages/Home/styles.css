@@ -4,8 +4,16 @@ img {
 }
 
 h2 {
-  color: #CC5803;
-  font-size: 48px;
+  color: #00021f;
+  font-size: 72px;
   text-align: center;
+  margin: 0;
+}
+
+h3 {
+  color: #00c3ff;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

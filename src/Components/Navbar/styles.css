@@ -10,7 +10,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #1F1300;
+  background: #00021f;
   color: #DADFF7;
   height: 90px;
 }
@@ -30,7 +30,7 @@
 
 .navbar .links li :nth-child(1) {
   text-decoration: none;
-  color: #CC5803;
+  color: #00c3ff;
   font-size: 1.5rem;
   padding-inline: 10px;
   padding-block: 20px;
@@ -40,6 +40,6 @@
 }
 
 .navbar .links li :nth-child(1):hover {
-  background: #392300;
+  background: #000552;
 }
 /*# sourceMappingURL=styles.css.map */

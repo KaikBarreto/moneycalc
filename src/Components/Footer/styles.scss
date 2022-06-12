@@ -1,10 +1,13 @@
+$bg-blue: #00021f;
+$light-blue: #00c3ff;
+
 footer {
     display: block;
     text-align: center;
     line-height: 90px;
     
-    background: #1F1300;
-    color: #DADFF7;
+    background: $bg-blue;
+    color: #fff;
     
     margin-top: 90px;
 
@@ -14,19 +17,20 @@ footer {
     height: 90px;
 
     p {
+        font-size: 32px;
         margin: 0;
         padding: 0;
 
         a {
             text-decoration: none;
-            color: #CC5803;
+            color: $light-blue;
             transition: .5s;
             border-radius: 30px;
             padding-block: 20px;
             padding-inline: 10px;
 
             &:hover {
-                background: lighten(#1F1300, 5);
+                background: lighten($bg-blue, 5);
             }
         }
     }
