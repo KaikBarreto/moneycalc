@@ -12,11 +12,16 @@
           align-items: center;
   background: #00021f;
   color: #DADFF7;
-  height: 90px;
+  height: 100px;
 }
 
 .navbar .logo {
+  width: 200px;
   padding: 50px;
+  margin-left: 20px;
+  background-image: url("../../img/logotipo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar .links {

@@ -10,8 +10,10 @@ export const Home = function() {
             <main>
                 <h2>MoneyCalc</h2>
                 <h3>A sua calculadora financeira</h3>
-                <img src="https://random.imagecdn.app/200/200" alt="MoneyCalc Logo" />
-                <Link to="/calculator">Ir para a calculadora</Link>
+                <div className="image" />
+                <div className="botao">
+                    <Link to="/calculator">Ir para a calculadora</Link>
+                </div>
             </main>
             <Footer />
         </>

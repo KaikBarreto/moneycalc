@@ -4,9 +4,7 @@ import "./styles.css"
 function Navbar() {
     return (
         <nav className="navbar">
-            <div className="logo">
-                Logo
-            </div>
+            <Link to="/" className="logo" />
 
             <ul className="links">
                 <li>
@@ -17,11 +15,6 @@ function Navbar() {
                 <li>
                     <Link to="/calculator" >
                         Calculadora
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/contact" >
-                        Contato
                     </Link>
                 </li>
             </ul>

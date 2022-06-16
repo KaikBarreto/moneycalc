@@ -1,6 +1,10 @@
-img {
+main {
   display: block;
-  margin: 10px auto;
+  width: 700px;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ccc;
 }
 
 h2 {
@@ -11,9 +15,57 @@ h2 {
 }
 
 h3 {
-  color: #00c3ff;
+  color: #222;
   font-size: 24px;
   text-align: center;
   margin: 0;
+}
+
+.botao {
+  display: block;
+  border: none;
+  padding: 15px;
+  font-size: 32px;
+  background: #00021f;
+  color: #00c3ff;
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.botao:hover {
+  -webkit-box-shadow: 5px 5px #00c3ff;
+          box-shadow: 5px 5px #00c3ff;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+
+.botao a {
+  color: #00c3ff;
+  text-decoration: none;
+}
+
+.image {
+  display: block;
+  height: 200px;
+  width: 30%;
+  margin: 0 auto;
+  background-image: url("../../../img/download.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.moneycalclogo {
+  display: block;
+  height: 100px;
+  width: 30%;
+  margin: 0 auto;
+  background-image: url("../../../img/logotipo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=styles.css.map */

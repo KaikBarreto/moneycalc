@@ -86,4 +86,8 @@ button:hover {
   -webkit-transform: translate(-5px, -5px);
           transform: translate(-5px, -5px);
 }
+
+.resultado {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */

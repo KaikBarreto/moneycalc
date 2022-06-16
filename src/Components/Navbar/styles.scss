@@ -12,10 +12,15 @@ $light-blue: #00c3ff;
     background: $bg-blue;
     color: #DADFF7;
 
-    height: 90px;
+    height: 100px;
 
     .logo {
+        width: 200px;
         padding: 50px;
+        margin-left: 20px;
+        background-image: url("../../img/logotipo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .links {

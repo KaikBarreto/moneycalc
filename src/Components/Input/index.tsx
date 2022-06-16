@@ -1,13 +1,13 @@
 import "./styles.css"
 
-type Input = {
+type InputType = {
     placeholder: string,
     name: string,
     header: string,
     handleChange: any
 }
 
-export const Input = function({ placeholder, name, header, handleChange}: Input): JSX.Element {
+export const Input = function({ placeholder, name, header, handleChange}: InputType): JSX.Element {
 
 
     return (

@@ -1,9 +1,13 @@
 $bg-blue: #00021f;
 $light-blue: #00c3ff;
 
-img {
+main {
     display: block;
-    margin: 10px auto;
+    width: 700px;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ccc;
 }
 
 h2 {
@@ -14,8 +18,61 @@ h2 {
 }
 
 h3 {
-    color: $light-blue;
+    color: #222;
     font-size: 24px;
     text-align: center;
     margin: 0;
+}
+
+.botao {
+    display: block;
+    border: none;
+    padding: 15px;
+
+    font-size: 32px;
+
+    background: $bg-blue;
+    color: $light-blue;
+    
+    display: block;
+    margin: 30px auto;
+    max-width: 400px;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: .5s;
+
+    &:hover {
+        box-shadow: 5px 5px $light-blue;
+
+        transform: translate(-5px, -5px);
+    }
+
+    a {
+        color: $light-blue;
+        text-decoration: none;
+    }
+}
+
+.image {
+    display: block;
+    height: 200px;
+    width: 30%;
+    margin: 0 auto;
+
+    background-image: url("../../../img/download.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.moneycalclogo {
+    display: block;
+    height: 100px;
+    width: 30%;
+    margin: 0 auto;
+    
+    background-image: url("../../../img/logotipo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

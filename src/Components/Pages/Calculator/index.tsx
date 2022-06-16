@@ -7,7 +7,6 @@ import "./styles.css"
 export const Calculator = function() {
 
     const [inicial, setInicial] = useState(0)
-    const [mensal, setMensal] = useState(0)
     const [taxa, setTaxa] = useState(0)
     const [tempo, setTempo] = useState(0)
 
@@ -15,8 +14,6 @@ export const Calculator = function() {
     function handleChange(e: any): void {
         if (e.target.name === "inicial") {
             setInicial(e.target.value)
-        } else if (e.target.name === "mensal") {
-            setMensal(e.target.value)
         } else if (e.target.name === "taxa"){
             setTaxa(e.target.value)
         } else {
@@ -24,13 +21,20 @@ export const Calculator = function() {
         }
     }
 
-    function formula(C:number , i: number, n: number, a:number) {
-        let M =  (C * ((1 + (i / 100)) ** n)) + (a * (((((1 + (i / 100))) ** n ) - 1) / (i / 100)))
+    function formula(inicial:number , taxa: number, tempo:number) {
+        let M =  0;
+        M = (inicial*(1+taxa/100)**tempo)
         
         return M.toFixed(2)
     }
 
-    const Montante = formula(inicial, taxa / 12, tempo * 12, mensal)
+    let Montante = parseInt(formula(inicial, taxa, tempo))
+    let montanteFormatado = Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}).format(Montante)
+
+    function changeVisibility() {
+        let botao = document.querySelector(".resultado")
+        botao?.classList.remove("resultado")
+    }
 
     return (
         <>
@@ -43,10 +47,6 @@ export const Calculator = function() {
                         <span>R$</span>
                     </div>
                     <div className="input">
-                        <Input placeholder="Digite aqui o valor dos aportes mensais (opcional)" name="mensal" header="Aportes mensais" handleChange={handleChange} />
-                        <span>R$</span>
-                    </div>
-                    <div className="input">
                         <Input placeholder="Digite aqui o valor da taxa de juros (% ao ano)" name="taxa" header="Taxa de juros (% ao ano)" handleChange={handleChange} />
                         <span>%</span>
                     </div>
@@ -55,11 +55,11 @@ export const Calculator = function() {
                         <span>Y</span>
                     </div>
                 </div>
-                <button>
+                <button onClick={changeVisibility} >
                     Calcular rendimentos
                 </button>
-                <h2>
-                    {Montante}
+                <h2 className="resultado">
+                    {montanteFormatado}
                 </h2>
             </main>
             <Footer />
