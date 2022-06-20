@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/moneycalc/static/css/main.3efc8f0b.css",
+    "main.js": "/moneycalc/static/js/main.7f1964ee.js",
+    "static/media/download.png": "/moneycalc/static/media/download.4f9d4c5bee08f300b078.png",
+    "static/media/logotipo.png": "/moneycalc/static/media/logotipo.159da9b20a8cba036444.png",
+    "static/media/pattern.png": "/moneycalc/static/media/pattern.4de2646c2b516c8aca8b.png",
+    "index.html": "/moneycalc/index.html",
+    "main.3efc8f0b.css.map": "/moneycalc/static/css/main.3efc8f0b.css.map",
+    "main.7f1964ee.js.map": "/moneycalc/static/js/main.7f1964ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3efc8f0b.css",
+    "static/js/main.7f1964ee.js"
+  ]
+}
